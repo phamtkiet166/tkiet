@@ -1,0 +1,47 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #001f3f; /* Màu nền tối */
+    color: #fff; /* Màu chữ trắng */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.logo {
+    font-size: 4em; /* Kích thước logo */
+    margin-bottom: 20px; /* Khoảng cách dưới logo */
+    color: #00bfff; /* Màu xanh nước biển cho logo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Hiệu ứng đổ bóng cho logo */
+}
+
+h1 {
+    font-size: 2em; /* Kích thước tiêu đề */
+    margin-bottom: 30px; /* Khoảng cách dưới tiêu đề */
+    color: #00bfff; /* Màu xanh nước biển cho tiêu đề */
+}
+
+button {
+    padding: 10px 20px; /* Khoảng cách cho nút */
+    font-size: 1.2em; /* Kích thước chữ cho nút */
+    background-color: rgba(0, 191, 255, 0.9); /* Nền nút xanh nước biển trong suốt */
+    color: #333; /* Màu chữ cho nút */
+    border: none; /* Không viền */
+    border-radius: 5px; /* Bo tròn các góc */
+    cursor: pointer; /* Đổi con trỏ khi di chuột qua nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi di chuột */
+    font-family: 'Courier New', monospace; /* Phông chữ cho nút */
+}
+
+button:hover {
+    background-color: rgba(0, 191, 255, 1); /* Đổi màu nền khi hover */
+}

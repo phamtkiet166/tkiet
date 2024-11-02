@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDrive - Dịch Vụ Lưu Trữ Trực Tuyến</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MyDrive</div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="uploadBtn">uploat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Trang Chủ</a></li>
+                <li><a href="#"><i class="fas fa-clock"></i> Gần Đây</a></li>
+                <li><a href="#"><i class="fas fa-trash"></i> Thùng Rác</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="banner">
+                <img src="tna.jpg" alt="Banner" class="banner-image">
+            </div>
+            <h1>Chào Mừng đến với 11a6</h1>
+            <div class="info-box">
+                <p>Chúng tôi cung cấp dịch vụ lưu trữ trực tuyến an toàn và đáng tin cậy. Tải lên, quản lý và chia sẻ tệp của bạn dễ dàng và nhanh chóng.</p>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm tệp..." class="search-bar">
+                <select id="fileTypeFilter">
+                    <option value="all">Tất cả</option>
+                    <option value="pdf">PDF</option>
+                    <option value="jpg">Hình ảnh</option>
+                    <option value="mp4">Video</option>
+                </select>
+            </div>
+            <div class="upload-form" id="uploadForm" style="display:none;">
+                <input type="file" id="fileInput" multiple>
+                <button id="submitBtn">Tải lên</button>
+            </div>
+            <h2>Danh Sách Tệp</h2>
+            <ul id="fileList"></ul>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 MyDrive. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
